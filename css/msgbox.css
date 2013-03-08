@@ -1,0 +1,43 @@
+/*****************************************
+	File 		: css.css
+	Description	: make style of msgbox elements, 
+				include overlay element
+	Author		: Irzhy RANAIVOARIVONY (alias malaDev)
+	e-mail		: malagroup.systems@gmail.com
+******************************************/
+
+.msgbox {
+	border:5px solid #000;
+	width:420px;
+	padding:10px 5px 15px 128px;
+	border-radius:6px;
+	min-height:120px;
+	margin:0 auto;
+	position:absolute;
+	background-color:#fff;
+	z-index:99;
+	font-size:11.5px
+} 
+.msgbox .box-close{position:relative;top:0px;right:2px;float:right;display:inline-block;cursor:pointer;opacity:0.3}
+.msgbox .box-close:hover{opacity:0.8}
+.msgbox .box-titre{font-weight:bold;border-bottom:1px solid #ccc;font-size:15px}
+.msgbox .box-content{padding-top:15px}
+
+.msgbox.normal{border-color:#2077b3;background:#fff url("../img/info.png") no-repeat}
+.msgbox.normal .box-titre{color:#2077b3;}
+.msgbox.warning{border-color:#ed7616;background:#fff url("../img/warning.png") no-repeat}
+.msgbox.warning .box-titre{color:#ed7616;}
+.msgbox.error{border-color:#d82121;background:#fff url("../img/error.png") no-repeat}
+.msgbox.error .box-titre{color:#d82121;}
+
+#boxOverlay{
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	display:block;
+	z-index:90;
+	opacity:0.6;
+	background:#000;
+	position:fixed;
+}

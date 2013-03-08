@@ -1,0 +1,4 @@
+!! no jQuery !!
+
+	-hide function to animated behavior (like $.fn.hide) > o.anim != false (duration of animation)
+	-bouttons in o.boutton [{name:"bt-name",click:functionOnClick},...]
